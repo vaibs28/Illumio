@@ -18,6 +18,7 @@ The methods are implemented in the FirewallServiceImpl class.
 
 Finally, to unit test the methods, I have used JUnit with JUnit runner 4.
 
+**Note: I have used the absolute file name, in both the Application and the UnitTest class which will need to be changed in order for the application to run.
 
 **Current Implementation**
 
@@ -29,6 +30,7 @@ However, I realised it would be a lot of overhead when we can instead just store
 
 Would have liked to test the time taken to find out for an extemely large number of records and then use both the approaches mentioned to see which one performs better. 
 For the other method, in which I suggested creating rule object for all the possible IPs and Ports in the range, the memory overhead will be high but the lookup would be in constant time rather than iterating over all the rules which is the current implementation.
+I would have liked to use the relative path names so that it doesn't need to be changed while running on a different system and I did try that but I wasn't able to get it to work within the timespan.
 
 **Team Preference**
 
